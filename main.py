@@ -10,7 +10,7 @@ def get_text():
     keys = list(slov)  # список ключей
     maybe = random.choice(keys)  # первое слово
     text.append(maybe)
-    n = random.randint(150, 400)
+    n = random.randint(150, 300)
     for i in range(n + 30):  # для того чтобы учесть запятые и прочее ненужные элементы
         maybe = text[-1]  # обычное слово
         if maybe not in slov:

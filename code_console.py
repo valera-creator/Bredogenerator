@@ -22,12 +22,7 @@ keys = list(slov)  # список ключей
 maybe = random.choice(keys)  # первое слово
 text.append(maybe)
 check = []
-while True:
-    n = int(input("Введите кол-во слов: "))
-    if n >= 1:
-        break
-    else:
-        print("бреда нужно больше")
+n = random.randint(100, 400)
 for i in range(n + 30):  # для того чтобы учесть запятые и прочее ненужные элементы
     maybe = text[-1]  # обычное слово
     if maybe not in slov:
