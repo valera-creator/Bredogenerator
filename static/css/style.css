@@ -1,0 +1,17 @@
+.Absolute-Center
+{
+text-align: center;
+padding-left: 47%;
+
+position: fixed;
+bottom:0;
+}
+
+body{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.image img {
+	filter: brightness(40%)
+}
