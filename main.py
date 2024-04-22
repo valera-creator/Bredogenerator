@@ -6,6 +6,18 @@ app = Flask(__name__)
 
 
 def get_text():
+    words = open('words.txt', encoding='utf8').readline()
+    words = words[1:-1]
+    words = words.split(", ")
+    words = list(map(lambda x: x[1:-1], words))  # адекватное преобразование в список
+    words = words[0:-1]
+    slov = {}
+    words = list(map(lambda x: x.lower(), words))  # к строчным
+    for i in range(len(words)):  # в словарь
+        if words[i] not in slov and words[i] != words[-1]:
+            slov[words[i]] = []
+        if words[i] != words[-1]:
+            slov[words[i]].append(words[i + 1])
     text = []
     keys = list(slov)  # список ключей
     maybe = random.choice(keys)  # первое слово
@@ -41,20 +53,4 @@ def answer():
 
 
 if __name__ == '__main__':
-    doc = Document("list_words.docx")
-    words = []
-    for paragraph in doc.paragraphs:
-        words.append(paragraph.text)
-    words = words[0]
-    words = words[9:-1]
-    words = words.split(", ")
-    words = list(map(lambda x: x[1:-1], words))  # адекватное преобразование в список
-    words = words[0:-1]
-    slov = {}
-    words = list(map(lambda x: x.lower(), words))  # к строчным
-    for i in range(len(words)):  # в словарь
-        if words[i] not in slov and words[i] != words[-1]:
-            slov[words[i]] = []
-        if words[i] != words[-1]:
-            slov[words[i]].append(words[i + 1])
     app.run(debug=True)
