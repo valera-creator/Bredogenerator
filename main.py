@@ -1,12 +1,11 @@
 from flask import Flask, render_template
 import random
-from docx import Document
 
 app = Flask(__name__)
 
 
 def get_text():
-    words = open('words.txt', encoding='utf8').readline()
+    words = open('words_text.txt', encoding='utf8').readline()
     words = words[1:-1]
     words = words.split(", ")
     words = list(map(lambda x: x[1:-1], words))  # адекватное преобразование в список
