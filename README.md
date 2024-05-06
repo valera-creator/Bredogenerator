@@ -6,4 +6,4 @@
  <li>pythonanywhere: http://bredogenerator.pythonanywhere.com/</li>
 </ul>
 
-<p>P.S. Я хостил на бесплатных сервисах надеюсь, они работают</p>
+<p>P.S. Я хостил на бесплатных сервисах, надеюсь, они работают</p>
