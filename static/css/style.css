@@ -1,3 +1,5 @@
+
+
 .Absolute-Center
 {
 text-align: center;
@@ -15,3 +17,130 @@ body{
 .image img {
 	filter: brightness(40%)
 }
+
+@media (max-width: 20000px) {
+p{
+font-size: 3.5rem;
+}
+
+button {
+width: 500%;
+height: 500%;
+
+}
+ }
+
+@media (max-width: 6000px) {
+p{
+font-size: 2.7rem;
+}
+
+button {
+width: 200%;
+height: 200%;
+}
+ }
+
+@media (max-width: 3300px) {
+p{
+font-size: 2rem;
+}
+
+button {
+width: 100%;
+height: 100%;
+}
+ }
+
+
+@media (max-width: 2200px) {
+p{
+font-size: 1.3rem;
+}
+
+button {
+width: 100%;
+height: 70%;
+}
+ }
+
+@media (max-width: 1640px) {
+p{
+font-size: 1rem;
+}
+
+button {
+width: 100%;
+height: 70%;
+}
+ }
+
+
+@media (max-width: 1080px) {
+p{
+font-size: 0.6rem;
+}
+
+button {
+width: 100%;
+height: 0.3%;
+}
+ }
+
+
+@media (max-width: 720px) {
+p{
+font-size: 0.35rem;
+}
+
+button {
+width: 70%;
+height: 1%;
+}
+ }
+
+@media (max-width: 540px) {
+p{
+font-size: 0.4rem;
+}
+
+button {
+width: 140px;
+height: 65px;
+}
+ }
+
+
+@media (max-width: 470px) {
+
+p{
+font-size: 0.3rem;
+}
+button {
+width: 125px;
+height: 50px;
+}
+ }
+
+
+@media (max-width: 340px) {
+
+p{
+font-size: 0.3rem;
+}
+button {
+width: 100px;
+height: 30px;
+}
+ }
+
+@media (max-width: 320px) {
+
+p{
+font-size: 0.4rem;
+}
+button {
+width: 100px;
+height: 30px;
+}
+ }
