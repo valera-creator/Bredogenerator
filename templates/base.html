@@ -18,24 +18,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
     <title>{{ title }}</title>
 </head>
 
 <body>
     <img src="../static/img/6.png" alt="">
-    <p>{{ text }}</p>
+    <p>{{text}}</p>
     <div class="center">
         <a href="/">
             <button class="btn btn-success">Сгенерировать новый текст</button>
         </a>
     </div>
-
-    <script>
-        document.addEventListener("resize", (event) => {
-            console.log(window.innerWidth);
-        });
-    </script>
 </body>
-
 </html>
